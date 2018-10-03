@@ -1,0 +1,25 @@
+{% extends '@SushiBufet/layout.html.twig' %}
+
+{% set title = 'Суши буфет в Хабаровске: суши, ролы, пицца, воки' %}
+
+{% block meta %}
+    <meta name="title" content="{{ title }}">
+    <meta name="description" content="TODO">
+    <meta name="keywords" content="TODO">
+{% endblock %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block opengraph %}
+    <meta property="og:title" content="{{ title }}"/>
+    <meta property="og:description" content="TODO"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="TODO"/>
+    <meta property="og:url" content="{{ app.request.uri }}"/>
+{% endblock %}
+
+{% block content %}
+    {% include '@SushiBufet/MainPage/Content/content.html.twig' %}
+{% endblock %}
