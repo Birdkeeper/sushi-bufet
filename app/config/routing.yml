@@ -1,3 +1,4 @@
-app:
-    resource: '@AppBundle/Controller/'
-    type: annotation
+sushi_bufet:
+    resource: "@SushiBufetBundle/Resources/config/routing.yml"
+    prefix:   /
+

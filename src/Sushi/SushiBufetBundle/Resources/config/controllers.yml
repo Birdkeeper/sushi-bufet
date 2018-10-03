@@ -1,0 +1,5 @@
+services:
+  sishi_bufet.controller.sushi:
+    class: Sushi\SushiBufetBundle\Controller\Main\SushiController
+    calls:
+      - [ setContainer, [ '@service_container' ]]
