@@ -1,0 +1,12 @@
+services:
+  sushi_bufet.repository.dish_category:
+    class: Sushi\SushiBufetBundle\Repository\DishCategoryRepository
+    factory: ['@doctrine.orm.default_entity_manager', getRepository]
+    arguments:
+      - Sushi\SushiBufetBundle\Entity\DishCategory
+
+  sushi_bufet.repository.dish:
+    class: Sushi\SushiBufetBundle\Repository\DishRepository
+    factory: ['@doctrine.orm.default_entity_manager', getRepository]
+    arguments:
+      - Sushi\SushiBufetBundle\Entity\Dish
